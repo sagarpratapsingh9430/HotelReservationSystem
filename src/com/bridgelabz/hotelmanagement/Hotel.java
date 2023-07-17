@@ -31,4 +31,28 @@ OUTPUT 2: Ridgewood
  */
 public class Hotel {
 
+    private String hotelName;
+    private int ratesForWeekDayForRegularCustomer;
+    private int ratesForWeekDayForRewardCustomer;
+    private int ratesForWeekendDayForRegularCustomer;
+    private int ratesForWeekendDayForRewardCustomer;
+
+    public Hotel(String hotelName, int ratesForWeekDayForRegularCustomer, int ratesForWeekDayForRewardCustomer, int ratesForWeekendDayForRegularCustomer, int ratesForWeekendDayForRewardCustomer) {
+        this.hotelName = hotelName;
+        this.ratesForWeekDayForRegularCustomer = ratesForWeekDayForRegularCustomer;
+        this.ratesForWeekDayForRewardCustomer = ratesForWeekDayForRewardCustomer;
+        this.ratesForWeekendDayForRegularCustomer = ratesForWeekendDayForRegularCustomer;
+        this.ratesForWeekendDayForRewardCustomer = ratesForWeekendDayForRewardCustomer;
+    }
+
+    @Override
+    public String toString() {
+        return "Hotel{" +
+                "hotelName='" + hotelName + '\'' +
+                ", ratesForWeekDayForRegularCustomer=" + ratesForWeekDayForRegularCustomer +
+                ", ratesForWeekDayForRewardCustomer=" + ratesForWeekDayForRewardCustomer +
+                ", ratesForWeekendDayForRegularCustomer=" + ratesForWeekendDayForRegularCustomer +
+                ", ratesForWeekendDayForRewardCustomer=" + ratesForWeekendDayForRewardCustomer +
+                '}';
+    }
 }
